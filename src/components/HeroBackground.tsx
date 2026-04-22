@@ -13,12 +13,12 @@ export function HeroBackground() {
       <div className="absolute left-1/2 -top-32 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-brand-blue-bright/15 blur-[120px]" />
 
       <div
-        className="absolute inset-0 hidden md:block"
+        className="absolute inset-y-0 right-0 hidden w-[60%] md:block lg:w-[55%]"
         style={{
           WebkitMaskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 35%, rgba(0,0,0,0.9) 70%, rgba(0,0,0,0.7) 100%)",
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,1) 55%, rgba(0,0,0,0.75) 100%)",
           maskImage:
-            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.3) 35%, rgba(0,0,0,0.9) 70%, rgba(0,0,0,0.7) 100%)",
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,1) 55%, rgba(0,0,0,0.75) 100%)",
         }}
       >
         <Image
@@ -26,9 +26,9 @@ export function HeroBackground() {
           alt=""
           fill
           priority
-          className="object-cover object-[78%_center]"
+          className="object-cover object-[35%_center]"
           style={{
-            opacity: 0.35,
+            opacity: 0.38,
             filter: "contrast(1.1) saturate(0.85)",
           }}
         />
@@ -36,7 +36,7 @@ export function HeroBackground() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, transparent 30%, transparent 70%, rgba(0,0,0,0.6) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, transparent 25%, transparent 70%, rgba(0,0,0,0.65) 100%)",
           }}
         />
       </div>
