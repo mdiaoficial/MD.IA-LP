@@ -86,7 +86,27 @@ export function Hero() {
                   </span>
                 </div>
 
-                <div className="relative h-10 overflow-hidden border-b border-brand-gold/10 bg-ink-black/50">
+                <div className="p-5 md:p-6">
+                  <p className="text-sm leading-relaxed text-fg-secondary md:text-base">
+                    Criei uma ferramenta que lê a situação atual da sua clínica em 3 minutos e te
+                    mostra,{" "}
+                    <span className="font-semibold text-fg-primary">em reais</span>, quanto ela
+                    faturaria com IA e automação implementadas do jeito certo.
+                  </p>
+
+                  <a
+                    href="/diagnostico"
+                    className="group relative mt-6 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(30,123,255,0.7)] transition-all hover:scale-[1.02] hover:shadow-[0_14px_40px_-8px_rgba(30,123,255,0.9)] md:text-base"
+                  >
+                    <span className="relative z-10">Descobrir quanto estou perdendo</span>
+                    <span className="relative z-10 text-lg transition-transform group-hover:translate-x-1">
+                      →
+                    </span>
+                    <span className="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-blue-bright via-brand-blue to-brand-blue-deep opacity-0 transition-opacity group-hover:opacity-100" />
+                  </a>
+                </div>
+
+                <div className="relative h-10 overflow-hidden border-t border-brand-gold/10 bg-ink-black/50">
                   <svg
                     className="absolute inset-0 h-full w-full"
                     viewBox="0 0 400 40"
@@ -120,26 +140,6 @@ export function Hero() {
                       transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
                     />
                   </svg>
-                </div>
-
-                <div className="p-5 md:p-6">
-                  <p className="text-sm leading-relaxed text-fg-secondary md:text-base">
-                    Criei uma ferramenta que lê a situação atual da sua clínica em 3 minutos e te
-                    mostra,{" "}
-                    <span className="font-semibold text-fg-primary">em reais</span>, quanto ela
-                    faturaria com IA e automação implementadas do jeito certo.
-                  </p>
-
-                  <a
-                    href="/diagnostico"
-                    className="group relative mt-6 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(30,123,255,0.7)] transition-all hover:scale-[1.02] hover:shadow-[0_14px_40px_-8px_rgba(30,123,255,0.9)] md:text-base"
-                  >
-                    <span className="relative z-10">Descobrir quanto estou perdendo</span>
-                    <span className="relative z-10 text-lg transition-transform group-hover:translate-x-1">
-                      →
-                    </span>
-                    <span className="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-blue-bright via-brand-blue to-brand-blue-deep opacity-0 transition-opacity group-hover:opacity-100" />
-                  </a>
                 </div>
               </div>
             </motion.div>
