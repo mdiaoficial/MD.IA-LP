@@ -52,14 +52,17 @@ const toneStyles = {
   blue: {
     bar: "bg-brand-blue",
     badge: "border-brand-blue/30 bg-brand-blue/10 text-brand-blue-bright",
+    text: "text-brand-blue-bright",
   },
   magenta: {
     bar: "bg-brand-magenta",
     badge: "border-brand-magenta/30 bg-brand-magenta/10 text-brand-magenta-bright",
+    text: "text-brand-magenta-bright",
   },
   gold: {
     bar: "bg-brand-gold",
     badge: "border-brand-gold/30 bg-brand-gold/10 text-brand-gold-bright",
+    text: "text-brand-gold-bright",
   },
 } as const;
 
@@ -124,14 +127,18 @@ export function GerencIAMockup() {
                   <div className={`absolute -top-0.5 left-0 right-0 h-0.5 rounded-full ${toneStyles[col.tone as keyof typeof toneStyles].bar}`} />
 
                   <div className="rounded-lg bg-ink-graphite p-3">
-                    <div className="mb-3 flex items-center justify-between">
-                      <div>
-                        <div className="text-[10px] font-medium uppercase tracking-wide text-fg-primary">
+                    <div className="mb-3">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <span className="text-[10px] font-medium uppercase tracking-wide text-fg-primary">
                           {col.title}
-                        </div>
-                        <div className="mt-0.5 font-mono text-[9px] text-fg-muted">{col.count} pacientes</div>
+                        </span>
+                        <span className="font-mono text-[9px] text-fg-muted">
+                          {col.count}
+                        </span>
                       </div>
-                      <div className="text-gradient-gold font-display text-[11px] font-bold">
+                      <div
+                        className={`mt-2 font-mono text-[11px] font-semibold ${toneStyles[col.tone as keyof typeof toneStyles].text}`}
+                      >
                         {col.value}
                       </div>
                     </div>
