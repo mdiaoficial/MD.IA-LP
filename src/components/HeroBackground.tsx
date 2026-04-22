@@ -13,7 +13,7 @@ export function HeroBackground() {
       <div className="absolute left-1/2 -top-32 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-brand-blue-bright/15 blur-[120px]" />
 
       <div
-        className="absolute inset-y-0 right-0 hidden w-[60%] md:block lg:w-[55%]"
+        className="absolute inset-y-0 right-0 hidden w-[55%] md:block lg:w-[50%]"
         style={{
           WebkitMaskImage:
             "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.5) 20%, rgba(0,0,0,1) 55%, rgba(0,0,0,0.75) 100%)",
@@ -26,9 +26,9 @@ export function HeroBackground() {
           alt=""
           fill
           priority
-          className="object-cover object-[35%_center]"
+          className="object-cover object-[15%_center]"
           style={{
-            opacity: 0.38,
+            opacity: 0.42,
             filter: "contrast(1.1) saturate(0.85)",
           }}
         />
@@ -41,15 +41,15 @@ export function HeroBackground() {
         />
       </div>
 
-      <div className="hero-photo-layer hero-photo-mobile absolute inset-0 md:hidden">
+      <div className="hero-photo-layer hero-photo-mobile absolute inset-x-0 top-[30%] h-[55%] md:hidden">
         <Image
           src="/dr-dan.jpg"
           alt=""
           fill
           priority
-          className="object-cover object-[50%_center]"
+          className="object-cover object-[50%_40%]"
           style={{
-            opacity: 0.42,
+            opacity: 0.55,
             filter: "contrast(1.1) saturate(0.9)",
           }}
         />
@@ -57,7 +57,7 @@ export function HeroBackground() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.88) 20%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.7) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.25) 25%, transparent 50%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.85) 100%)",
           }}
         />
       </div>
