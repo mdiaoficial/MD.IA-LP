@@ -88,7 +88,7 @@ const heroFeatures: HeroFeature[] = [
     name: "Wavoip",
     title: (
       <>
-        Ligue pro paciente pelo <em className="italic font-normal text-brand-magenta-bright">WhatsApp dele,</em> direto do CRM.
+        Ligue para o paciente, pelo <em className="italic font-normal text-brand-magenta-bright">WhatsApp da Clínica,</em> direto do CRM.
       </>
     ),
     body:

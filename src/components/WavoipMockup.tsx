@@ -131,7 +131,7 @@ export function WavoipMockup() {
             <div className="col-span-2 flex flex-col bg-ink-graphite">
               <div className="border-b border-white/5 px-4 py-3">
                 <div className="font-mono text-[9px] uppercase tracking-[0.2em] text-fg-muted">
-                  Transcrição em tempo real
+                  Gravação em tempo real
                 </div>
                 <div className="mt-1 flex items-center gap-2">
                   <span className="relative flex h-1.5 w-1.5">
@@ -139,7 +139,7 @@ export function WavoipMockup() {
                     <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-brand-blue" />
                   </span>
                   <span className="font-mono text-[9px] uppercase tracking-[0.18em] text-brand-blue-bright">
-                    Transcrevendo
+                    Gravando
                   </span>
                 </div>
               </div>
