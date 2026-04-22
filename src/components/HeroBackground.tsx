@@ -41,13 +41,13 @@ export function HeroBackground() {
         />
       </div>
 
-      <div className="hero-photo-layer hero-photo-mobile absolute inset-x-0 top-[30%] h-[55%] md:hidden">
+      <div className="hero-photo-layer hero-photo-mobile absolute inset-x-0 bottom-0 h-[55%] md:hidden">
         <Image
           src="/dr-dan.jpg"
           alt=""
           fill
           priority
-          className="object-cover object-[50%_40%]"
+          className="object-cover object-[50%_25%]"
           style={{
             opacity: 0.55,
             filter: "contrast(1.1) saturate(0.9)",
@@ -57,7 +57,7 @@ export function HeroBackground() {
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.25) 25%, transparent 50%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.85) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.35) 15%, transparent 40%, transparent 75%, rgba(0,0,0,0.85) 100%)",
           }}
         />
       </div>
