@@ -87,42 +87,6 @@ export function Hero() {
                 </div>
 
                 <div className="relative p-5 md:p-6">
-                  <div className="pointer-events-none absolute bottom-7 left-0 right-0 z-0 h-16 overflow-hidden md:bottom-8">
-                    <svg
-                      className="absolute inset-0 h-full w-full"
-                      viewBox="0 0 600 64"
-                      preserveAspectRatio="none"
-                      fill="none"
-                    >
-                      <defs>
-                        <linearGradient id="hero-card-ecg" x1="0%" y1="0%" x2="100%" y2="0%">
-                          <stop offset="0%" stopColor="#D4A944" stopOpacity="0" />
-                          <stop offset="12%" stopColor="#D4A944" stopOpacity="0.85" />
-                          <stop offset="50%" stopColor="#E8C467" stopOpacity="1" />
-                          <stop offset="88%" stopColor="#D4A944" stopOpacity="0.85" />
-                          <stop offset="100%" stopColor="#D4A944" stopOpacity="0" />
-                        </linearGradient>
-                      </defs>
-
-                      <path
-                        d="M0 32 L100 32 L115 32 L122 22 L129 44 L136 10 L143 54 L150 32 L260 32 L275 32 L282 22 L289 44 L296 10 L303 54 L310 32 L420 32 L435 32 L442 22 L449 44 L456 10 L463 54 L470 32 L600 32"
-                        stroke="url(#hero-card-ecg)"
-                        strokeWidth="1.2"
-                        fill="none"
-                        opacity="0.25"
-                      />
-                      <motion.path
-                        d="M0 32 L100 32 L115 32 L122 22 L129 44 L136 10 L143 54 L150 32 L260 32 L275 32 L282 22 L289 44 L296 10 L303 54 L310 32 L420 32 L435 32 L442 22 L449 44 L456 10 L463 54 L470 32 L600 32"
-                        stroke="url(#hero-card-ecg)"
-                        strokeWidth="1.8"
-                        fill="none"
-                        initial={{ pathLength: 0.18, pathOffset: 0 }}
-                        animate={{ pathOffset: [0, 1] }}
-                        transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
-                      />
-                    </svg>
-                  </div>
-
                   <p className="relative z-10 text-sm leading-relaxed text-fg-secondary md:text-base">
                     Criei uma ferramenta que lê a situação atual da sua clínica em 3 minutos e te
                     mostra,{" "}
