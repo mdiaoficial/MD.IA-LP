@@ -13,8 +13,10 @@ export function Navbar() {
       className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-ink-black/70 backdrop-blur-xl"
     >
       <div className="container-page flex h-20 items-center justify-between">
-        <Logo />
-        <nav className="hidden items-center gap-8 md:flex">
+        <a href="/" aria-label="MD.IA — página inicial">
+          <Logo />
+        </a>
+        <nav aria-label="Principal" className="hidden items-center gap-8 md:flex">
           <a href="#metodo" className="text-sm text-fg-secondary transition-colors hover:text-fg-primary">
             Como funciona
           </a>

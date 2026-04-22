@@ -30,8 +30,8 @@ const config: Config = {
         },
         fg: {
           primary: "#FFFFFF",
-          secondary: "#B8B8C4",
-          muted: "#6B6B7A",
+          secondary: "#C6C6D0",
+          muted: "#8A8A96",
         },
       },
       fontFamily: {
