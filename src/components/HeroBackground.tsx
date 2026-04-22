@@ -47,17 +47,17 @@ export function HeroBackground() {
           alt=""
           fill
           priority
-          className="object-cover object-[55%_center]"
+          className="object-cover object-[50%_center]"
           style={{
-            opacity: 0.22,
-            filter: "contrast(1.05) saturate(0.9)",
+            opacity: 0.42,
+            filter: "contrast(1.1) saturate(0.9)",
           }}
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.98) 0%, rgba(0,0,0,0.95) 30%, rgba(0,0,0,0.55) 55%, rgba(0,0,0,0.3) 75%, rgba(0,0,0,0.85) 100%)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.88) 20%, rgba(0,0,0,0.5) 40%, rgba(0,0,0,0.15) 60%, rgba(0,0,0,0.2) 80%, rgba(0,0,0,0.7) 100%)",
           }}
         />
       </div>
