@@ -20,7 +20,7 @@ export function Navbar() {
           <a href="#metodo" className="text-sm text-fg-secondary transition-colors hover:text-fg-primary">
             Como funciona
           </a>
-          <a href="#prova" className="text-sm text-fg-secondary transition-colors hover:text-fg-primary">
+          <a href="#clientes" className="text-sm text-fg-secondary transition-colors hover:text-fg-primary">
             Clientes
           </a>
           <a href="#ferramenta" className="text-sm text-fg-secondary transition-colors hover:text-fg-primary">

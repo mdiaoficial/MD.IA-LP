@@ -27,6 +27,7 @@ export function ClientsMarquee() {
 
   return (
     <section
+      id="clientes"
       aria-label="Clínicas que confiam na MD.IA"
       className="relative overflow-hidden border-y border-white/5 bg-ink-black py-20 md:py-24"
     >
