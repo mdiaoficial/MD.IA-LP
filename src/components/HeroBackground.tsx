@@ -1,10 +1,36 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 export function HeroBackground() {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden">
+      <div
+        className="absolute inset-0 hidden md:block"
+        style={{
+          WebkitMaskImage:
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 45%, rgba(0,0,0,0.75) 80%, transparent 100%), linear-gradient(to bottom, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.85) 60%, transparent 100%)",
+          maskImage:
+            "linear-gradient(to right, transparent 0%, rgba(0,0,0,0.4) 45%, rgba(0,0,0,0.75) 80%, transparent 100%), linear-gradient(to bottom, rgba(0,0,0,0.95) 10%, rgba(0,0,0,0.85) 60%, transparent 100%)",
+          WebkitMaskComposite: "source-in",
+          maskComposite: "intersect",
+        }}
+      >
+        <Image
+          src="/dr-dan.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover object-[75%_center]"
+          style={{
+            opacity: 0.14,
+            filter: "grayscale(0.4) contrast(1.05) brightness(0.9)",
+            mixBlendMode: "luminosity",
+          }}
+        />
+      </div>
+
       <div className="absolute inset-0 grid-lines opacity-40" />
 
       <div className="absolute -left-32 top-1/4 h-[700px] w-[700px] rounded-full bg-brand-blue/25 blur-[140px]" />
