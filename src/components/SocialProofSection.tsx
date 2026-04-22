@@ -1,7 +1,3 @@
-"use client";
-
-import { motion } from "framer-motion";
-
 const cases = [
   {
     metric: "2% → 14%",
@@ -120,17 +116,11 @@ export function SocialProofSection() {
           ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-16 flex flex-col items-center gap-3 text-center"
-        >
+        <div className="mt-16 flex flex-col items-center gap-3 text-center">
           <p className="max-w-xl text-base text-fg-secondary md:text-lg">
             Cada número saiu de uma clínica real. Por ética médica, nenhuma é nomeada sem autorização escrita.
           </p>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

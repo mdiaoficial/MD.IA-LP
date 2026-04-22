@@ -13,22 +13,24 @@ export function HeroBackground() {
 
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,rgba(0,0,0,0.6)_100%)]" />
 
-      {[...Array(30)].map((_, i) => {
-        const left = (i * 37) % 100;
-        const top = (i * 53) % 100;
-        const duration = 3 + (i % 4);
-        const delay = (i * 0.2) % 3;
-        return (
-          <motion.div
-            key={i}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: [0, 0.6, 0] }}
-            transition={{ duration, delay, repeat: Infinity, ease: "easeInOut" }}
-            className="absolute h-0.5 w-0.5 rounded-full bg-white"
-            style={{ left: `${left}%`, top: `${top}%` }}
-          />
-        );
-      })}
+      <div className="absolute inset-0 hidden md:block" aria-hidden="true">
+        {[...Array(15)].map((_, i) => {
+          const left = (i * 37) % 100;
+          const top = (i * 53) % 100;
+          const duration = 3 + (i % 4);
+          const delay = (i * 0.2) % 3;
+          return (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: [0, 0.6, 0] }}
+              transition={{ duration, delay, repeat: Infinity, ease: "easeInOut" }}
+              className="absolute h-0.5 w-0.5 rounded-full bg-white"
+              style={{ left: `${left}%`, top: `${top}%` }}
+            />
+          );
+        })}
+      </div>
 
       <svg
         className="absolute bottom-20 left-0 right-0 h-48 w-full"
