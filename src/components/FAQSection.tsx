@@ -20,6 +20,38 @@ const faqs = [
     q: "Pra quem a MD.IA NÃO é?",
     a: "A MD.IA não é pra médico ou empresário que quer largar toda a operação comercial na mão de uma empresa, de uma agência de marketing, ou de uma secretária de IA genérica comprada em prateleira. Aqui a gente treina e potencializa equipes comerciais pra chegarem no próximo nível. Não substitui a equipe pelo piloto automático. Se você procura terceirização de responsabilidade, existem opções piores e mais baratas.",
   },
+  {
+    q: "Minha clínica é pequena. A MD.IA também é pra mim?",
+    a: "Depende do seu gargalo, não do seu porte. Se o problema é volume (pouco lead chegando), a MD.IA resolve só parcialmente, porque ela não inventa paciente. Mas se o problema é processo (perder lead no WhatsApp, não remarcar quem desmarca, não saber de onde veio cada agendamento), a plataforma já muda sua operação no primeiro mês, independente do tamanho. Clínica solo com 30 consultas por mês se beneficia. Consultório com 10 consultas por mês provavelmente ainda não é a hora. O diagnóstico te aponta em qual dos cenários sua clínica está.",
+  },
+  {
+    q: "Minha equipe não entende de IA. Isso é um problema?",
+    a: "Ninguém entende de IA na primeira semana. Parte do que a Implementação Assistida entrega é exatamente formar o seu time: treinamento semanal da recepção, mentoria pro médico e pro empresário, e um Copilot que orienta sua secretária humana em tempo real durante cada conversa. Em 60 dias sua equipe está usando IA melhor do que a maioria das agências de marketing usa hoje. O medo de IA é medo de não ser treinado. Isso a gente resolve.",
+  },
+  {
+    q: "Preciso trocar meu sistema de prontuário ou agenda atual?",
+    a: "Não. A MD.IA opera como camada de inteligência e automação sobre o que você já usa pra prontuário e agendamento. Integramos com os principais sistemas do mercado. Algumas clínicas optam por consolidar tudo na MD.IA com o tempo, mas isso nunca é pré-requisito. Você mantém seu prontuário, a gente resolve o que acontece antes e depois dele: captação, atendimento, follow-up, retenção, análise.",
+  },
+  {
+    q: "Funciona com WhatsApp pessoal ou só com WhatsApp Business?",
+    a: "Só com WhatsApp Business (API oficial). E isso é uma decisão consciente. Clínicas que ainda operam no WhatsApp pessoal estão, tecnicamente, violando os termos de uso do próprio WhatsApp, correm risco de bloqueio da conta e não conseguem integrar com nenhuma ferramenta profissional. A migração pra Business é o primeiro passo que a gente conduz na implementação, e é mais simples do que parece.",
+  },
+  {
+    q: "Em quanto tempo eu vejo resultado?",
+    a: "Na plataforma standalone, clínicas que seguem o playbook costumam ver impacto em leads respondidos e agendamentos em 30 dias. Na Implementação Assistida, trabalhamos com meta de 90 dias pra mudança visível no seu extrato financeiro. É a garantia que ofereço: se em 90 dias você não viu resultado mensurável, a gente continua trabalhando sem cobrar até aparecer.",
+  },
+  {
+    q: "E a LGPD? Como ficam os dados dos meus pacientes?",
+    a: "Dados hospedados no Brasil, criptografia em trânsito e em repouso, acesso restrito por função, consentimento explícito do paciente em todos os canais de contato, logs de auditoria de quem acessou o quê e quando. O selo LGPD no topo da página não é decoração, é compromisso técnico documentado. Sua clínica fica mais compliant depois de entrar, não menos.",
+  },
+  {
+    q: "Quanto custa?",
+    a: "O investimento varia pelo porte da clínica e pelo caminho escolhido (plataforma standalone vs Implementação Assistida). Eu não publico valores porque cada caso tem uma configuração diferente, e porque quero conversar só com quem o diagnóstico já mostrou ter ROI claro. Se o diagnóstico indicar que sua clínica deixa R$ 30 mil escapar por mês, o investimento na MD.IA se paga em semanas. Se indicar bem menos, talvez não seja sua hora ainda. E eu te digo com honestidade.",
+  },
+  {
+    q: "Posso cancelar quando quiser?",
+    a: "Plataforma standalone: mensalidade, cancela a qualquer momento. Implementação Assistida: compromisso de 6 meses, porque é o tempo mínimo pra transformação real acontecer. Seria desonesto prometer resultado sem esse prazo de construção conjunta. Passado esse período, sem fidelidade rígida. Se você está entrando já pensando em cancelar, honestamente, provavelmente não é cliente da MD.IA.",
+  },
 ];
 
 const faqSchema = {
