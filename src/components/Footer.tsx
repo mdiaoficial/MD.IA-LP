@@ -59,7 +59,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="https://wa.me/55"
+                  href="https://wa.me/5511932169211?text=Estava%20no%20seu%20site%20e%20quero%20implementar%20a%20MD.IA%20na%20minha%20cl%C3%ADnica."
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-fg-secondary transition-colors hover:text-fg-primary"
                 >
                   WhatsApp
