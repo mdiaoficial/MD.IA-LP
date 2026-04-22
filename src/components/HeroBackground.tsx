@@ -41,18 +41,23 @@ export function HeroBackground() {
         />
       </div>
 
-      <div className="hero-photo-layer hero-photo-mobile absolute inset-x-0 bottom-0 h-[55%] md:hidden">
-        <Image
-          src="/dr-dan.jpg"
-          alt=""
-          fill
-          priority
-          className="object-cover object-[50%_25%]"
-          style={{
-            opacity: 0.55,
-            filter: "contrast(1.1) saturate(0.9)",
-          }}
-        />
+      <div className="hero-photo-layer hero-photo-mobile absolute inset-x-0 bottom-0 h-[55%] overflow-hidden md:hidden">
+        <div
+          className="absolute inset-0"
+          style={{ transform: "translateY(30%) scale(1.15)", transformOrigin: "center bottom" }}
+        >
+          <Image
+            src="/dr-dan.jpg"
+            alt=""
+            fill
+            priority
+            className="object-cover object-[50%_25%]"
+            style={{
+              opacity: 0.55,
+              filter: "contrast(1.1) saturate(0.9)",
+            }}
+          />
+        </div>
         <div
           className="absolute inset-0"
           style={{
