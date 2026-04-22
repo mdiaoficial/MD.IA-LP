@@ -41,32 +41,71 @@ export function FounderSection() {
         <div className="grid grid-cols-1 items-start gap-16 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-5">
             <div className="relative">
-              <div className="pointer-events-none absolute -inset-10 rounded-[40px] bg-brand-blue/20 blur-[80px]" />
-              <div className="pointer-events-none absolute -inset-6 rounded-[40px] bg-brand-magenta/10 blur-[60px]" />
+              <motion.div
+                animate={{ opacity: [0.4, 0.7, 0.4] }}
+                transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+                className="pointer-events-none absolute -inset-10 rounded-[40px] bg-brand-blue/25 blur-[80px]"
+              />
+              <motion.div
+                animate={{ opacity: [0.2, 0.5, 0.2] }}
+                transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+                className="pointer-events-none absolute -inset-6 rounded-[40px] bg-brand-magenta/15 blur-[60px]"
+              />
+              <div className="pointer-events-none absolute -inset-1 rounded-[24px] bg-gradient-to-br from-brand-gold/40 via-brand-blue/30 to-brand-magenta/40 opacity-60 blur-sm" />
 
-              <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_30px_80px_-20px_rgba(0,0,0,0.9)]">
-                <Image
-                  src="/dr-dan.jpg"
-                  alt="Dr. Daniel Dorta, médico e fundador da MD.IA, durante apresentação"
-                  width={1200}
-                  height={800}
-                  className="block h-auto w-full"
+              <div className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_40px_100px_-20px_rgba(0,0,0,0.95),0_0_60px_-20px_rgba(30,123,255,0.4)]">
+                <motion.div
+                  initial={{ scale: 1 }}
+                  animate={{ scale: 1.08 }}
+                  transition={{ duration: 18, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+                  className="relative"
+                >
+                  <Image
+                    src="/dr-dan.jpg"
+                    alt="Dr. Daniel Dorta, médico e fundador da MD.IA, durante apresentação"
+                    width={1400}
+                    height={933}
+                    className="block h-auto w-full"
+                    priority
+                  />
+                </motion.div>
+
+                <motion.div
+                  initial={{ x: "-100%" }}
+                  animate={{ x: "200%" }}
+                  transition={{ duration: 6, repeat: Infinity, repeatDelay: 3, ease: "easeInOut" }}
+                  className="pointer-events-none absolute inset-y-0 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-white/5 to-transparent"
                 />
 
-                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/5 bg-gradient-to-t from-ink-black via-ink-black/70 to-transparent" />
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-ink-black/40 to-transparent" />
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-brand-blue/10 via-transparent to-brand-magenta/15 mix-blend-overlay" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-ink-black via-ink-black/80 to-transparent" />
+                <div className="pointer-events-none absolute inset-y-0 right-0 w-1/3 bg-gradient-to-l from-ink-black/50 to-transparent" />
+                <div
+                  className="pointer-events-none absolute inset-0"
+                  style={{
+                    background:
+                      "radial-gradient(ellipse at 30% 40%, transparent 30%, rgba(0,0,0,0.5) 100%)",
+                  }}
+                />
 
-                <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                <div className="absolute bottom-0 left-0 right-0 p-7 md:p-10">
                   <div className="flex items-center gap-3">
-                    <div className="h-px w-8 bg-brand-gold" />
-                    <span className="font-mono text-[10px] uppercase tracking-[0.25em] text-brand-gold-bright">
+                    <div className="h-px w-10 bg-brand-gold" />
+                    <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-brand-gold-bright">
                       Fundador · MD.IA
                     </span>
                   </div>
-                  <div className="mt-2 font-display text-2xl font-medium text-fg-primary md:text-3xl">
+                  <div
+                    className="mt-3 font-display font-medium tracking-tight text-fg-primary"
+                    style={{
+                      fontSize: "clamp(1.75rem, 3vw, 2.5rem)",
+                      lineHeight: "1",
+                      letterSpacing: "-0.02em",
+                    }}
+                  >
                     Dr. Daniel Dorta
                   </div>
-                  <div className="mt-1 text-sm text-fg-secondary">
+                  <div className="mt-2 text-sm text-fg-secondary md:text-base">
                     Médico · Dono de clínica · Construtor
                   </div>
                 </div>

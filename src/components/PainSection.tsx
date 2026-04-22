@@ -143,7 +143,7 @@ export function PainSection() {
             </p>
 
             <a
-              href="/diagnostico"
+              href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
               className="group relative mt-10 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-8 py-5 text-base font-semibold text-white transition-all hover:scale-[1.02] glow-blue md:text-lg"
             >
               <span>Calcular quanto minha clínica perde hoje</span>

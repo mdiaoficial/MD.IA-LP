@@ -1,11 +1,30 @@
-export function Logo({ className = "" }: { className?: string }) {
+import Image from "next/image";
+
+export function Logo({
+  className = "",
+  size = "default",
+}: {
+  className?: string;
+  size?: "default" | "sm" | "lg";
+}) {
+  const dims =
+    size === "sm"
+      ? { w: 96, h: 32 }
+      : size === "lg"
+        ? { w: 200, h: 64 }
+        : { w: 140, h: 44 };
+
   return (
-    <div className={`flex items-center gap-2 ${className}`}>
-      <span className="font-display text-xl font-extrabold tracking-tight">
-        <span className="text-gradient-blue">MD</span>
-        <span className="text-brand-magenta">.</span>
-        <span className="text-gradient-blue">IA</span>
-      </span>
+    <div className={`flex items-center ${className}`}>
+      <Image
+        src="/logo/logo_mdia.jpg"
+        alt="MD.IA"
+        width={dims.w}
+        height={dims.h}
+        priority
+        className="h-auto w-auto object-contain"
+        style={{ maxHeight: `${dims.h}px` }}
+      />
     </div>
   );
 }

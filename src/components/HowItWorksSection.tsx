@@ -188,7 +188,7 @@ export function HowItWorksSection() {
 
               <div className="mt-10 border-t border-white/5 pt-6">
                 <a
-                  href="/diagnostico"
+                  href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-sm font-semibold text-ink-black transition-all hover:scale-[1.02]"
                 >
                   Verificar se sua clínica se qualifica
@@ -200,22 +200,49 @@ export function HowItWorksSection() {
         </div>
 
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.3 }}
-          className="mt-16 flex flex-col items-center gap-2 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-60px" }}
+          transition={{ duration: 0.8 }}
+          className="relative mt-20 overflow-hidden rounded-2xl border border-white/10 bg-gradient-to-br from-ink-graphite via-ink-carbon to-ink-graphite p-8 text-center md:p-12"
         >
-          <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-fg-muted">
-            Não sei qual é o meu caso?
-          </p>
-          <a
-            href="/diagnostico"
-            className="group inline-flex items-center gap-2 border-b border-brand-blue/40 pb-1 text-sm font-medium text-brand-blue-bright transition-colors hover:border-brand-blue-bright hover:text-fg-primary"
-          >
-            O diagnóstico te aponta em 3 minutos
-            <span className="transition-transform group-hover:translate-x-1">→</span>
-          </a>
+          <div className="pointer-events-none absolute -left-20 top-1/2 h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-brand-blue/15 blur-[100px]" />
+          <div className="pointer-events-none absolute -right-20 top-1/2 h-[300px] w-[300px] -translate-y-1/2 rounded-full bg-brand-magenta/10 blur-[100px]" />
+
+          <div className="relative mx-auto flex max-w-3xl flex-col items-center gap-4">
+            <div className="inline-flex items-center gap-3">
+              <div className="h-px w-8 bg-brand-blue" />
+              <span className="font-mono text-[10px] uppercase tracking-[0.28em] text-brand-blue-bright">
+                Não sei qual é o meu caso
+              </span>
+              <div className="h-px w-8 bg-brand-blue" />
+            </div>
+
+            <h3
+              className="font-display font-normal text-fg-primary"
+              style={{
+                fontSize: "clamp(1.5rem, 3vw, 2.5rem)",
+                lineHeight: "1.1",
+                letterSpacing: "-0.02em",
+              }}
+            >
+              O diagnóstico aponta em{" "}
+              <em className="italic text-brand-gold-bright">3 minutos.</em>
+            </h3>
+
+            <p className="max-w-xl text-sm leading-relaxed text-fg-secondary md:text-base">
+              8 perguntas, cálculo em reais do que sua operação deixa escapar, e recomendação
+              clara de qual caminho faz sentido pra sua clínica.
+            </p>
+
+            <a
+              href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
+              className="group relative mt-2 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-7 py-4 text-base font-semibold text-white transition-all hover:scale-[1.02] glow-blue"
+            >
+              <span>Começar diagnóstico gratuito</span>
+              <span className="text-xl transition-transform group-hover:translate-x-1">→</span>
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>

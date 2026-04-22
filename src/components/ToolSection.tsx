@@ -319,24 +319,28 @@ function HeroFeatureRow({
       </div>
 
       <div className="lg:col-span-5">
-        <div className="mb-4 flex items-center gap-3">
+        <div className="mb-3 flex items-center gap-3">
           <span className={`font-mono text-[10px] uppercase tracking-[0.25em] ${accentText[feature.accent]}`}>
             / {String(index + 1).padStart(2, "0")} · {feature.eyebrow}
           </span>
         </div>
 
-        <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 backdrop-blur-sm">
-          <span className={`font-display text-sm font-bold ${accentText[feature.accent]}`}>
-            {feature.name}
-          </span>
+        <div
+          className={`font-display font-semibold italic leading-none tracking-tight ${accentText[feature.accent]}`}
+          style={{
+            fontSize: "clamp(2.25rem, 4vw, 3.5rem)",
+            letterSpacing: "-0.03em",
+          }}
+        >
+          {feature.name}
         </div>
 
         <h3
-          className="font-display font-bold text-fg-primary"
+          className="mt-6 font-display font-normal text-fg-primary"
           style={{
-            fontSize: "clamp(1.5rem, 2.4vw, 2.25rem)",
-            lineHeight: "1.15",
-            letterSpacing: "-0.02em",
+            fontSize: "clamp(1.25rem, 2vw, 1.75rem)",
+            lineHeight: "1.2",
+            letterSpacing: "-0.01em",
           }}
         >
           {feature.title}

@@ -86,8 +86,44 @@ export function Hero() {
                   </span>
                 </div>
 
-                <div className="p-5 md:p-6">
-                  <p className="text-sm leading-relaxed text-fg-secondary md:text-base">
+                <div className="relative p-5 md:p-6">
+                  <div className="pointer-events-none absolute bottom-7 left-0 right-0 z-0 h-16 overflow-hidden md:bottom-8">
+                    <svg
+                      className="absolute inset-0 h-full w-full"
+                      viewBox="0 0 600 64"
+                      preserveAspectRatio="none"
+                      fill="none"
+                    >
+                      <defs>
+                        <linearGradient id="hero-card-ecg" x1="0%" y1="0%" x2="100%" y2="0%">
+                          <stop offset="0%" stopColor="#D4A944" stopOpacity="0" />
+                          <stop offset="12%" stopColor="#D4A944" stopOpacity="0.85" />
+                          <stop offset="50%" stopColor="#E8C467" stopOpacity="1" />
+                          <stop offset="88%" stopColor="#D4A944" stopOpacity="0.85" />
+                          <stop offset="100%" stopColor="#D4A944" stopOpacity="0" />
+                        </linearGradient>
+                      </defs>
+
+                      <path
+                        d="M0 32 L100 32 L115 32 L122 22 L129 44 L136 10 L143 54 L150 32 L260 32 L275 32 L282 22 L289 44 L296 10 L303 54 L310 32 L420 32 L435 32 L442 22 L449 44 L456 10 L463 54 L470 32 L600 32"
+                        stroke="url(#hero-card-ecg)"
+                        strokeWidth="1.2"
+                        fill="none"
+                        opacity="0.25"
+                      />
+                      <motion.path
+                        d="M0 32 L100 32 L115 32 L122 22 L129 44 L136 10 L143 54 L150 32 L260 32 L275 32 L282 22 L289 44 L296 10 L303 54 L310 32 L420 32 L435 32 L442 22 L449 44 L456 10 L463 54 L470 32 L600 32"
+                        stroke="url(#hero-card-ecg)"
+                        strokeWidth="1.8"
+                        fill="none"
+                        initial={{ pathLength: 0.18, pathOffset: 0 }}
+                        animate={{ pathOffset: [0, 1] }}
+                        transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
+                      />
+                    </svg>
+                  </div>
+
+                  <p className="relative z-10 text-sm leading-relaxed text-fg-secondary md:text-base">
                     Criei uma ferramenta que lê a situação atual da sua clínica em 3 minutos e te
                     mostra,{" "}
                     <span className="font-semibold text-fg-primary">em reais</span>, quanto ela
@@ -95,8 +131,8 @@ export function Hero() {
                   </p>
 
                   <a
-                    href="/diagnostico"
-                    className="group relative mt-6 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(30,123,255,0.7)] transition-all hover:scale-[1.02] hover:shadow-[0_14px_40px_-8px_rgba(30,123,255,0.9)] md:text-base"
+                    href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
+                    className="group relative z-10 mt-6 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(30,123,255,0.7),0_0_0_4px_rgba(10,10,15,0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_14px_40px_-8px_rgba(30,123,255,0.9),0_0_0_4px_rgba(10,10,15,0.6)] md:text-base"
                   >
                     <span className="relative z-10">Descobrir quanto estou perdendo</span>
                     <span className="relative z-10 text-lg transition-transform group-hover:translate-x-1">
@@ -104,42 +140,6 @@ export function Hero() {
                     </span>
                     <span className="pointer-events-none absolute inset-0 bg-gradient-to-r from-brand-blue-bright via-brand-blue to-brand-blue-deep opacity-0 transition-opacity group-hover:opacity-100" />
                   </a>
-                </div>
-
-                <div className="relative h-10 overflow-hidden border-t border-brand-gold/10 bg-ink-black/50">
-                  <svg
-                    className="absolute inset-0 h-full w-full"
-                    viewBox="0 0 400 40"
-                    preserveAspectRatio="none"
-                    fill="none"
-                  >
-                    <defs>
-                      <linearGradient id="hero-card-ecg" x1="0%" y1="0%" x2="100%" y2="0%">
-                        <stop offset="0%" stopColor="#D4A944" stopOpacity="0" />
-                        <stop offset="15%" stopColor="#D4A944" stopOpacity="0.9" />
-                        <stop offset="50%" stopColor="#E8C467" stopOpacity="1" />
-                        <stop offset="85%" stopColor="#D4A944" stopOpacity="0.9" />
-                        <stop offset="100%" stopColor="#D4A944" stopOpacity="0" />
-                      </linearGradient>
-                    </defs>
-
-                    <path
-                      d="M0 20 L70 20 L80 20 L85 13 L90 27 L95 6 L100 34 L105 20 L170 20 L180 20 L185 13 L190 27 L195 6 L200 34 L205 20 L270 20 L280 20 L285 13 L290 27 L295 6 L300 34 L305 20 L400 20"
-                      stroke="url(#hero-card-ecg)"
-                      strokeWidth="1"
-                      fill="none"
-                      opacity="0.3"
-                    />
-                    <motion.path
-                      d="M0 20 L70 20 L80 20 L85 13 L90 27 L95 6 L100 34 L105 20 L170 20 L180 20 L185 13 L190 27 L195 6 L200 34 L205 20 L270 20 L280 20 L285 13 L290 27 L295 6 L300 34 L305 20 L400 20"
-                      stroke="url(#hero-card-ecg)"
-                      strokeWidth="1.5"
-                      fill="none"
-                      initial={{ pathLength: 0.2, pathOffset: 0 }}
-                      animate={{ pathOffset: [0, 1] }}
-                      transition={{ duration: 3.5, repeat: Infinity, ease: "linear" }}
-                    />
-                  </svg>
                 </div>
               </div>
             </motion.div>

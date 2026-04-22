@@ -10,7 +10,7 @@ export function Footer() {
       <div className="container-page relative py-16 md:py-20">
         <div className="grid grid-cols-2 gap-10 md:grid-cols-4 md:gap-8">
           <div className="col-span-2 md:col-span-1">
-            <Logo />
+            <Logo size="lg" />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-fg-secondary">
               O ecossistema que devolve ao médico o controle da própria clínica.
             </p>
@@ -66,7 +66,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="/diagnostico" className="text-brand-blue-bright transition-colors hover:text-fg-primary">
+                <a href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer" className="text-brand-blue-bright transition-colors hover:text-fg-primary">
                   Fazer diagnóstico →
                 </a>
               </li>
