@@ -9,15 +9,15 @@ export function Logo({
 }) {
   const dims =
     size === "sm"
-      ? { w: 96, h: 32 }
+      ? { w: 120, h: 40 }
       : size === "lg"
-        ? { w: 200, h: 64 }
-        : { w: 140, h: 44 };
+        ? { w: 260, h: 80 }
+        : { w: 200, h: 64 };
 
   return (
     <div className={`flex items-center ${className}`}>
       <Image
-        src="/logo/logo_mdia.jpg"
+        src="/logo/logo_mdia.png"
         alt="MD.IA"
         width={dims.w}
         height={dims.h}
