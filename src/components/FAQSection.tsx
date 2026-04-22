@@ -22,11 +22,28 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((f) => ({
+    "@type": "Question",
+    name: f.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: f.a,
+    },
+  })),
+};
+
 export function FAQSection() {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
     <section id="faq" className="relative overflow-hidden bg-ink-black py-32 md:py-40">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="pointer-events-none absolute inset-0">
         <div className="absolute right-0 top-1/4 h-[400px] w-[500px] rounded-full bg-brand-blue/8 blur-[140px]" />
       </div>

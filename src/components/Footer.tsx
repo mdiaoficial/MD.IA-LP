@@ -1,4 +1,5 @@
 import { Logo } from "./Logo";
+import { diagnosticoUrl } from "@/lib/utils";
 
 export function Footer() {
   return (
@@ -68,7 +69,7 @@ export function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer" className="text-brand-blue-bright transition-colors hover:text-fg-primary">
+                <a href={diagnosticoUrl("footer")} target="_blank" rel="noopener noreferrer" className="text-brand-blue-bright transition-colors hover:text-fg-primary">
                   Fazer diagnóstico →
                 </a>
               </li>

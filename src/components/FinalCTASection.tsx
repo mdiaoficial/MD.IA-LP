@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { diagnosticoUrl } from "@/lib/utils";
 
 export function FinalCTASection() {
   return (
@@ -69,7 +70,7 @@ export function FinalCTASection() {
 
           <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
-              href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
+              href={diagnosticoUrl("final-cta")} target="_blank" rel="noopener noreferrer"
               className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-8 py-5 text-base font-semibold text-white transition-all hover:scale-[1.02] glow-blue md:text-lg"
             >
               <span className="relative z-10">Começar diagnóstico</span>

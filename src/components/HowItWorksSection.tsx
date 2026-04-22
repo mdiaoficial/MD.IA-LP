@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { diagnosticoUrl } from "@/lib/utils";
 
 const standalone = [
   "Acesso completo à plataforma MD.IA",
@@ -188,7 +189,7 @@ export function HowItWorksSection() {
 
               <div className="mt-10 border-t border-white/5 pt-6">
                 <a
-                  href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
+                  href={diagnosticoUrl("how-it-works")} target="_blank" rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 rounded-full bg-gold-gradient px-6 py-3 text-sm font-semibold text-ink-black transition-all hover:scale-[1.02]"
                 >
                   Verificar se sua clínica se qualifica
@@ -236,7 +237,7 @@ export function HowItWorksSection() {
             </p>
 
             <a
-              href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
+              href={diagnosticoUrl("how-it-works")} target="_blank" rel="noopener noreferrer"
               className="group relative mt-2 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-7 py-4 text-base font-semibold text-white transition-all hover:scale-[1.02] glow-blue"
             >
               <span>Começar diagnóstico gratuito</span>

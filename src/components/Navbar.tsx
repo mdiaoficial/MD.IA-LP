@@ -2,6 +2,7 @@
 
 import { Logo } from "./Logo";
 import { motion } from "framer-motion";
+import { diagnosticoUrl } from "@/lib/utils";
 
 export function Navbar() {
   return (
@@ -25,7 +26,7 @@ export function Navbar() {
           </a>
         </nav>
         <a
-          href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
+          href={diagnosticoUrl("navbar")} target="_blank" rel="noopener noreferrer"
           className="group inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-medium text-fg-primary transition-all hover:border-brand-blue/50 hover:bg-brand-blue/10"
         >
           Diagnóstico

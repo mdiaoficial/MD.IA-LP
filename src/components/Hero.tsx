@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { HeroBackground } from "./HeroBackground";
 import { DashboardMockup } from "./DashboardMockup";
+import { diagnosticoUrl } from "@/lib/utils";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -95,7 +96,7 @@ export function Hero() {
                   </p>
 
                   <a
-                    href="https://mdia.cloud/diagnostico" target="_blank" rel="noopener noreferrer"
+                    href={diagnosticoUrl("hero")} target="_blank" rel="noopener noreferrer"
                     className="group relative z-10 mt-6 inline-flex items-center gap-3 overflow-hidden rounded-full bg-blue-gradient px-6 py-3.5 text-sm font-semibold text-white shadow-[0_10px_30px_-10px_rgba(30,123,255,0.7),0_0_0_4px_rgba(10,10,15,0.6)] transition-all hover:scale-[1.02] hover:shadow-[0_14px_40px_-8px_rgba(30,123,255,0.9),0_0_0_4px_rgba(10,10,15,0.6)] md:text-base"
                   >
                     <span className="relative z-10">Descobrir quanto estou perdendo</span>
