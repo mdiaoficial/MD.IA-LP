@@ -18,6 +18,8 @@ const clients: Client[] = [
   { src: "/cases/bis_farmacutica_logo.jpeg", alt: "Bios Farmacêutica", invert: false },
   { src: "/cases/clinica-baumgarten.webp", alt: "Clínica Baumgarten", invert: true },
   { src: "/cases/plenitud.png", alt: "Plenitud Instituto de Medicina Integrativa", invert: true },
+  { src: "/cases/acelerador.webp", alt: "Acelerador Médico", invert: true },
+  { src: "/cases/dra-saene.jpeg", alt: "Dra. Saene Spinelli · Medicina e Saúde", invert: true },
 ];
 
 export function ClientsMarquee() {
