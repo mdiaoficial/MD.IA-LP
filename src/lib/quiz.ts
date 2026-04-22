@@ -42,9 +42,9 @@ export const questions: Question[] = [
   },
   {
     id: "patientLTV",
-    label: "E o ticket médio por paciente ao longo do relacionamento?",
+    label: "E o ticket médio por paciente?",
     helper:
-      "Ticket médio é o total que um paciente típico gera na sua clínica: consultas, retornos, procedimentos, exames, recompras. Se uma paciente faz 1 consulta + 3 procedimentos + 2 retornos ao longo de 1 ano, o ticket dela é a soma de tudo isso. Se você não tem o dado exato, estime de cabeça. É o número que mais muda o resultado.",
+      "O valor que um paciente típico gasta na sua clínica. Aqui na minha, por exemplo, vendo planos de acompanhamento que incluem consultas, injetáveis, procedimentos e tecnologias ao longo do ano. O valor desse plano é o meu ticket médio. Se a sua clínica vende procedimento a procedimento, some quanto um paciente médio gasta do primeiro contato até deixar de vir. Estime de cabeça se precisar. É o número que mais muda o resultado.",
     type: "number",
     prefix: "R$",
     placeholder: "Ex: 3500",
