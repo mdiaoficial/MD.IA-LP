@@ -22,19 +22,19 @@ const faqs = [
   },
   {
     q: "Minha clínica é pequena. A MD.IA também é pra mim?",
-    a: "Depende do seu gargalo, não do seu porte. Se o problema é volume (pouco lead chegando), a MD.IA resolve só parcialmente, porque ela não inventa paciente. Mas se o problema é processo (perder lead no WhatsApp, não remarcar quem desmarca, não saber de onde veio cada agendamento), a plataforma já muda sua operação no primeiro mês, independente do tamanho. Clínica solo com 30 consultas por mês se beneficia. Consultório com 10 consultas por mês provavelmente ainda não é a hora. O diagnóstico te aponta em qual dos cenários sua clínica está.",
+    a: "Depende do seu gargalo e do seu ticket médio, não do seu porte. Minha própria clínica é de pequeno porte e fica aberta só 2 dias por semana. Mesmo assim, a MD.IA fez toda a diferença no meu faturamento. No meu portfólio tenho clínicas que faturam mais de R$ 2 milhões por mês, com dezenas de funcionários, e o ROI delas com a MD.IA foi absurdo também. A regra é simples: se a sua clínica é pequena mas o seu ticket médio é alto (o quanto um paciente gasta do primeiro contato ao último), a MD.IA é pra você. Se o ticket é baixo, talvez ainda não seja a sua hora.",
   },
   {
     q: "Minha equipe não entende de IA. Isso é um problema?",
-    a: "Ninguém entende de IA na primeira semana. Parte do que a Implementação Assistida entrega é exatamente formar o seu time: treinamento semanal da recepção, mentoria pro médico e pro empresário, e um Copilot que orienta sua secretária humana em tempo real durante cada conversa. Em 60 dias sua equipe está usando IA melhor do que a maioria das agências de marketing usa hoje. O medo de IA é medo de não ser treinado. Isso a gente resolve.",
+    a: "Isso é regra, não exceção. Mais de 70% das clínicas têm no quadro pessoas com dificuldade real em tecnologia. Minha própria secretária tem 58 anos e não tem facilidade nenhuma com ferramenta digital. E é justamente por isso que a MD.IA é única no mercado: nossa equipe ensina, treina e mentora o seu time pra ultrapassar essa barreira tecnológica e começar a entregar resultado real. Treinamento semanal da recepção, mentoria pro médico e pro empresário, e um Copilot orientando cada conversa em tempo real. Ninguém fica pra trás. Em 60 dias quem tinha medo de tecnologia está conduzindo IA com fluidez.",
   },
   {
     q: "Preciso trocar meu sistema de prontuário ou agenda atual?",
-    a: "Não. A MD.IA opera como camada de inteligência e automação sobre o que você já usa pra prontuário e agendamento. Integramos com os principais sistemas do mercado. Algumas clínicas optam por consolidar tudo na MD.IA com o tempo, mas isso nunca é pré-requisito. Você mantém seu prontuário, a gente resolve o que acontece antes e depois dele: captação, atendimento, follow-up, retenção, análise.",
+    a: "Não. A MD.IA opera como camada de inteligência e automação sobre o que você já usa pra prontuário e agendamento. Temos integração nativa com MEDX, Feegow, Amplimed e outros sistemas líderes do mercado. Se o seu prontuário não está na lista, avaliamos caso a caso e temos abertura pra novas parcerias. Você mantém seu prontuário, a gente resolve tudo que acontece antes e depois dele: captação, atendimento, follow-up, retenção, análise.",
   },
   {
     q: "Funciona com WhatsApp pessoal ou só com WhatsApp Business?",
-    a: "Só com WhatsApp Business (API oficial). E isso é uma decisão consciente. Clínicas que ainda operam no WhatsApp pessoal estão, tecnicamente, violando os termos de uso do próprio WhatsApp, correm risco de bloqueio da conta e não conseguem integrar com nenhuma ferramenta profissional. A migração pra Business é o primeiro passo que a gente conduz na implementação, e é mais simples do que parece.",
+    a: "Funciona com os dois. Temos integração tanto com API oficial quanto com API não oficial. Mas a nossa recomendação é sempre migrar pra WhatsApp Business conectado à API Oficial. A MD.IA tem integração nativa com a API Oficial, é mais estável, mais segura, sem risco de bloqueio e é a única forma de operar em volume sem susto. Nossa equipe auxilia em toda a configuração do seu número, do zero até rodar.",
   },
   {
     q: "Em quanto tempo eu vejo resultado?",
@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Quanto custa?",
-    a: "O investimento varia pelo porte da clínica e pelo caminho escolhido (plataforma standalone vs Implementação Assistida). Eu não publico valores porque cada caso tem uma configuração diferente, e porque quero conversar só com quem o diagnóstico já mostrou ter ROI claro. Se o diagnóstico indicar que sua clínica deixa R$ 30 mil escapar por mês, o investimento na MD.IA se paga em semanas. Se indicar bem menos, talvez não seja sua hora ainda. E eu te digo com honestidade.",
+    a: "O investimento varia pelo porte da clínica e pelo caminho escolhido (plataforma standalone vs Implementação Assistida). Eu não publico valores porque cada caso tem uma configuração diferente, e porque quero conversar só com quem o diagnóstico já mostrou ter ROI claro. Se o diagnóstico indicar que sua clínica deixa R$ 10 mil escapar por mês, a MD.IA se paga no primeiro semestre e vira lucro puro daí em diante. Se indicar bem menos, talvez não seja sua hora ainda. E eu te digo com honestidade.",
   },
   {
     q: "Posso cancelar quando quiser?",
