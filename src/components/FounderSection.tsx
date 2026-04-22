@@ -94,7 +94,7 @@ export function FounderSection() {
                     Dr. Daniel Dorta
                   </div>
                   <div className="mt-2 text-sm text-fg-secondary">
-                    Médico · Dono de clínica · Construtor
+                    Médico · Dono de clínica · Arquiteto de IA
                   </div>
                 </div>
               </div>
